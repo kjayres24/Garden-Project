@@ -17,10 +17,6 @@ export class ProductsComponent implements OnInit {
     this.findProducts();
   }
 
-  // @Input() set product(product: any) {
-  //   this._product = product;
-  // }
-
   get product(): any {
     console.log('Heyo');
     console.log(this._product);

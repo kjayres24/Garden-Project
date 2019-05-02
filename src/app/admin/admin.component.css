@@ -1,0 +1,59 @@
+.bg {
+    z-index: -2;
+    margin-top: 0vh;
+    background-image: url('../../assets/gardenprojectbackground.jpg');
+    background-size: 100%;
+    height: 78.75vh;
+    padding-top: 10vh;
+}
+
+.card {
+    color: #234d20;
+    text-align: center;
+    width: 25vw;
+    height: 50vh;
+    border-radius: 1vmax;
+    background-color: #f0f7da;
+    margin: 5vh auto;
+    box-shadow: 0vh 0vh 3vh #000000;
+    filter: blur(0.05vh);
+    padding-top: 1vh;
+}
+
+hr {
+    width: 20vw;
+    margin-bottom: 4vh;
+}
+
+.form {
+    text-align: left;
+    margin-left: 3.5vw;
+}
+
+.text {
+    font-size: 1.25vmax;
+    font-weight: bold;
+}
+
+.input {
+    border-width: 0.35vh;
+    border-color: #77ab59; /*#f0f7da*/
+    background: whitesmoke;
+    margin-top: 1vh;
+    width: 18vw;
+    height: 3vh;
+    font-size:1.25vmax;
+    color: #234d20;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.button {
+    margin-top: 2.75vh;
+    width: 8vw;
+    height: 3.75vh;
+    border-color: #234d20;
+    background-color: #234d20;
+    color: #f0f7da;
+    font-size: 1.25vmax;
+    font-family: 'Times New Roman', Times, serif;
+}

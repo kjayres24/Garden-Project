@@ -1,3 +1,17 @@
-<p>
-  admin works!
-</p>
+<div class="bg">
+  <div class="card">
+    <h1>Login</h1>
+    <hr />
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form">
+        <label class="text" for="email">Username:</label><br />
+        <input class="input" formControlName="email" type="text" name="email">
+        <br /><br />
+        <label class="text" for="password">Password:</label><br />
+        <input class="input" formControlName="password" type="password" name="password">
+        <br /><br />
+      </div>                            <!-- routerLink="/products" -->
+      <button class="button" type="submit" >Submit</button>
+    </form>
+  </div>
+</div>
