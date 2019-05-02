@@ -6,9 +6,11 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
+import { ProductService } from './product.service';
 
 import { NavComponent } from './nav/nav.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,15 +20,15 @@ import { AppRoutingModule } from './app-routing.module';
     AboutComponent,
     ProductsComponent,
     AdminComponent,
-
     NavComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProductService, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
