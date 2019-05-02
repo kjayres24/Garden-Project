@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
 import { NavComponent } from './nav/nav.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavComponent } from './nav/nav.component';
     NavComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
