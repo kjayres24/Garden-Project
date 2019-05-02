@@ -8,6 +8,7 @@ import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
 
 import { NavComponent } from './nav/nav.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { NavComponent } from './nav/nav.component';
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
