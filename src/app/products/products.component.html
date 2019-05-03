@@ -1,12 +1,14 @@
 <div class="deck">
+    <div class="bg"></div>
     <div class="card">
         <div class="cardContainer" *ngFor="let product of products">
-          
-            <h1><em>{{ product.product_name }}</em></h1>
-            <h3>{{ product.product_description }}</h3>
-            <p>{{ product.product_price }}</p>
-            <img src="{{ product.product_image }}" alt="some plant" />
-            <p>{{ product.userIid }}</p>
+            <img src="{{ product.product_image }}" alt="some plant" class="img" />
+            <h1 class="name"><em>{{ product.product_name }}</em></h1>
+            <h3 class="des">{{ product.product_description }}</h3>
+            <p class="price">Price: ${{ product.product_price }}</p>
+            <!-- <img src="{{ product.product_image }}" alt="some plant" class="img" /> -->
+            <!-- <p cl>{{ product.userIid }}</p> -->
+            <div *ngIf="deleteBtn"><button class="delBtn" (click)="onDelete()">Delete</button></div>
         </div>
     </div>
 </div>

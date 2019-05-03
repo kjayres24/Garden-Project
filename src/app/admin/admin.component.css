@@ -18,6 +18,7 @@
     box-shadow: 0vh 0vh 3vh #000000;
     filter: blur(0.05vh);
     padding-top: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 hr {
@@ -44,7 +45,7 @@ hr {
     height: 3vh;
     font-size:1.25vmax;
     color: #234d20;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .button {
@@ -55,5 +56,5 @@ hr {
     background-color: #234d20;
     color: #f0f7da;
     font-size: 1.25vmax;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }

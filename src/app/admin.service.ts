@@ -15,13 +15,16 @@ const httpOptions = {
 })
 
 export class AdminService {
+  public x = false;
   private dbUrl = 'https://efa-gardenapp-backend.herokuapp.com/api/auth/login';
 
   constructor(private http: HttpClient) { }
 
-  login() : Observable<Admin[]> {
+
+  login() /*: Observable<Admin[]>*/ {
+    // let x = 'hello';
     console.log('hiya');
-    return this.http.post<Admin[]>(this.dbUrl, httpOptions)
+    // return this.http.post<Admin[]>(this.dbUrl, httpOptions)
   }
 
 }
