@@ -9,10 +9,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
+  exampleChild: boolean = false;
 
   loginForm: FormGroup;
   loginInfo = [];
   isSubmitted = false;
+  // deleteBtn = false;
 
 
   constructor(private fb: FormBuilder, private aService: AdminService, private router: Router) {
@@ -20,10 +22,12 @@ export class AdminComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.aService.x)
     this.loginForm = this.fb.group({
       email: ['', Validators.required],
       password: ['', Validators.required]
     })
+    // console.log(this.loginForm.value.email);
 
     // this.findBooks();
   }
@@ -34,9 +38,15 @@ export class AdminComponent implements OnInit {
     console.log('wassup');
     console.log(this.loginForm.value);
     this.isSubmitted = true;
+    // console.log(this.loginForm.value.email);
     if(this.loginForm.invalid){
+      this.aService.x = false;
       return;
     }
+    if(this.loginForm.value.email === 'twest@gmail.com' && this.loginForm.value.password === 'test'){
+      this.aService.x = true;
+    }
+    // this.deleteBtn = true;
     // this.aService.login(this.loginForm.value);
     this.router.navigateByUrl('/products');
   }

@@ -20,9 +20,13 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   getProducts() : Observable<Product[]> {
-    console.log('hello');
+    // console.log('hello');
     // console.log( this.http.get<Product[]>(this.dbUrl));
     return this.http.get<Product[]>(this.dbUrl)
   }
+
+  deleteProducts(id: number) : Observable<Product[]> {
+    return this.http.delete<Product[]>(`${this.dbUrl}/${id}`, httpOptions);
+  } 
 
 }
