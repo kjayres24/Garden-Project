@@ -7,14 +7,18 @@
 }
 
 .card {
-    height: 50vh;
+    height: 60vh;
     width: 50vw;
     background-color: #F0F7DA;
-    border-radius: 5px;
-    margin-left: 25em;
+    border-radius: 8px;
+    margin-left: 20em;
   position: absolute;
-  margin-top: 10em;
+  margin-top: 5em;
   text-align: center;
+  box-shadow: 0vh 0vh 3vh #000000;
+    filter: blur(0.05vh);
+  
+  
 }
 
 .logoHome {
@@ -23,4 +27,6 @@
 
 .text {
     margin-top: -2em;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    padding: 1em;
 }
